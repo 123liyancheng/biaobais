@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>爱你吆</title>
+		<audio src="img/a.mp3"  autoplay="autoplay" loop="loop"></audio> 
+		<style >
+			
+			body{ background-attachment: fixed; background-image: url(img/3.jpg);background-size: 100% ;}
+			div img{display: block;
+			margin-top: 30%;
+			width: 60%;
+			border: solid 10px white;
+			}
+
+       </style>
+		
+	</head>
+	<body>
+				
+	<div align="center">
+			<img src="img/1.jpg">
+		<div >
+			
+		</div>
+		<font color="deeppink" size="10"face="楷体">
+		 
+   	     <p id="textHide" style="display: none;">	
+
+年年有我，岁岁有我<br>
+遇见你三生有幸<br>
+我愿在你开心的时候陪你开心<br>
+你难过时做你的依靠<br>
+想和你共度余生<br>
+新年意愿吉祥如意<br>
+有钱有你<br>
+不求生活多美好<br>
+只求此生唯有你
+
+   <p id="textShow"></p>
+
+  </p>	
+	  </font>	
+		</div>   
+     </body>
+   
+   
+   <script>
+   	var page2Txt = document.getElementById('textHide'),
+   	page2TxtShow = document.getElementById('textShow'),
+   	i = 0,
+   	timer = setInterval(function(){
+   		page2TxtShow.innerHTML = page2Txt.innerHTML.substring(0, i);
+   		i++;
+   		if(page2TxtShow.innerHTML == page2Txt.innerHTML){
+   			clearInterval(timer);
+   		};
+   	},120);
+   
+   </script>
+   
+
+	</body>
+</html>
